@@ -1,0 +1,213 @@
+html {
+  height: 100%;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 120px;
+  padding-top: 285px;
+  top: 0;
+  left: 0;
+  z-index:20;
+  visibility: hidden;
+}
+
+#main-nav {
+  padding-left: 20px;
+  text-align: center;
+}
+
+#logo {
+  position: relative;
+  width: 168px;
+  height: 130px;
+  background: url(../../assets/images/nmn-logo.png) no-repeat center center;
+}
+
+header nav a {
+  font-size: 1em;
+  color: #FFF;
+  display: block;
+  height: 18px;
+  text-decoration: none;
+  margin: 0 0 2px 40px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+/*  text-indent: 9999px;*/
+  width: 121px;
+  -moz-transition: background-position .2s .01s ease-in-out;
+  -webkit-transition: background-position .2s .01s ease-in-out;
+  -o-transition: background-position .2s .01s ease-in-out;
+  -ms-transition: background-position .2s .01s ease-in-out;
+  transition: background-position .2s .01s ease-in-out;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.profile-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  right: 126%;
+  opacity: 0;
+  background-color: black;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 10;
+}
+
+.close {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  width: 28px;
+  height: 28px;
+  background: url(../../assets/images/close-x.svg) no-repeat scroll center center transparent;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.about-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  margin-top: -220px;
+  margin-left: -255px;
+  text-align: center;
+  color: white;
+}
+
+.about-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  margin-left: -255px;
+  padding-left: 20px;
+  text-align: left;
+  color: white;
+}
+
+#js-content-wrapper{
+  position: relative;
+  height: 8175px;
+  background: url(../../assets/images/sample-bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.column {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 20%;
+  max-width: 80%;
+  overflow: visible;
+}
+
+.hide {
+ visibility: hidden;
+}
+
+.show {
+ right: 0px;
+ opacity: 1;
+}
+
+.muse {
+  display: none;
+}
+
+.mistress {
+/*  display: none;*/
+}
+
+.title {
+  position: relative;
+  top: 0;
+}
+
+.title img{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+}
+
+.frame {
+  padding: 24px 0;
+}
+
+.frame:last-child{
+  padding-bottom: 0;
+}
+
+.frame img {
+  width: auto;
+  max-width: 100%;
+}
+
+.frame p {
+  font-family: ;
+  font-size: 12px;
+  opacity: 0.68;
+  color: #FFF;
+  text-align: center;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#polaroid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 220px;
+  margin-left: 2.5%;
+  margin-top: 8.5%;
+  background: url(../../assets/images/polaroid-grey-1.png) no-repeat center center;
+  visibility: hidden;
+}
+
+.social-links{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 245px;
+  margin-bottom: 25px;
+}
+
+.git {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -25px;
+  text-indent: -9999px;
+  background: url(../../assets/images/githubwhite.png) no-repeat center center;
+  opacity: .8;
+}
