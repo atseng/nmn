@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title> Mistress &amp; Muse -digital portfolio </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta>
     <link media="all" href="assets/stylesheets/base.css" rel="stylesheet"></link>
@@ -8,6 +9,8 @@
     <link media="all" href="assets/stylesheets/animations.css" rel="stylesheet"></link>
     <link media="all" href="assets/stylesheets/style.css" rel="stylesheet"></link>
     <link media="all" href="assets/stylesheets/layout.css" rel="stylesheet"></link>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'></link>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
     <script src="assets/javascripts/jquery-1.10.2.min.js"></script>
     <script src="assets/javascripts/jquery.scrollTo-1.4.3.1-min.js"></script>
     <script src="assets/javascripts/jquery.bpopup.min.js"></script>
@@ -16,10 +19,14 @@
   <body>
     <div id="preloader" style="display: none;"></div>
     <header>
-      <nav>
-        <a id="logo"></a>
+      <nav class="hide">
+        <a href="#top" id="logo-mistress"></a>
+        <a id="ampersand"></a>
+        <a href="#top" id="logo-muse"></a>
         <div id="main-nav">
-          <a id="navName">About</a>
+          <a id="navName">
+            About
+          </a>
         </div>
       </nav>
     </header>
@@ -28,110 +35,215 @@
       <div class="close"></div>
       <div class="about">
         <div class="about-header">
+          <h2>about</h2>
           <div class="anatomy">
-            As the World sleeps
-            Decorate your soul
-            Can you feel the weight of my crimes
-            Desire your company under covers
+           <h1> Allen Tseng </h1>
+           <h2>Art Director / UX Designer / Web Developer </h2>
+          </div>
+          <div class="copy">
+            <p>The first thing you would probably notice on his official drivers license is his former gigantic swarming mayham mane of hair, but if you looked closer you would also notice the letters nmn sandwiched between his name. Between his waking hours of lorem ipsom and his nightly attempts to induce dreams of golden ratios &amp; fibanocci sequences he would pretend those letters stood for another title: New Media Narrator. Mistress &amp; Muse is a portfolio of his raison d'etre and the two most influential modes of creation in his life: Design &amp; Art. Allen Tseng is ipsom has no middle name &amp; is perfectly content with that.</p>
+          </div>
+          <div class="social-links">
+            <span>
+              <a href="http://www.github.com/atseng" target="_blank" class="git">github</a>
+              <a href="http://www.linkdin.com/atseng" target="_blank" class="linkedin">linkdin</a>
+              <a href="http://www.linkdin.com/atseng" target="_blank" class="vimeo">vimeo</a>
+            </span>
+          </div>
+          <div class="about-text">
+            <p>
+              Currently designing at
+              <a href="www.croissant.io" target="_blank">Croissant</a>
+            </p>
+            <p>
+              Cofounder &amp; art director at
+              <a href="www.artact.co" target="_blank"> ArtAct</a>
+            <p>
+              Teaching assistant at
+              <a href="www.girldevelopit.com" target="_blank">
+              Girl Develop It</a>
+            </p>
+            <p>
+              1st cohort launcher of <a href="www.launchacademy.com" target="_blank"> Launch Academy</a>
+            </p>
+            <p class="copyright">&#169; 2014</p>
           </div>
         </div>
-        <div class="about-text">New Media Narrators is dedicated to the pursuit of geniune, beautiful artistic expression and design.</div>
       </div>
+    </div>
     <!-- End About -->
-      <div class="social-links">
-        <a class="git">github</a>
+    <section id="title">
+      <div class="image-container">
+        <img id="js-mistress" class="center" src="assets/images/mistress-title.jpg">
+        <img id="js-muse" class="center hide" src="assets/images/muse-title3.jpg">
       </div>
-    </div>
-     <!-- Link -->
-    <div class="title">
-      <img id="typography" class="center" src="assets/images/mistress-title.jpg">
-    </div>
+    </section>
     <!-- Content -->
     <section id="js-content-wrapper">
       <div class="column mistress">
         <!-- giant list of divs or ul with li divs -->
         <div class="frame">
           <img id="work" class="center" src="assets/images/croissant-trio.jpg">
-          <p class="label">croissant</p>
-          <p>Branding, Illustration, Web Design</p>
+          <a href="http://www.croissant.io" target="_blank"  class="info">Visit Site</a>
+          <span class="mask center">
+            <p class="label">croissant</p>
+            <p>Logotype, Illustration, Responsive Design</p>
+          </span>
         </div>
         <div class="frame">
           <img id="work" class="center" src="assets/images/art-act-wood.jpg">
-          <p class="label">artact</p>
-          <p>Art Direction, Branding, Web Design </p>
+          <a href="http://www.artact.co" target="_blank" class="info">Visit Site</a>
+          <span class="mask center">
+            <p class="label">artact</p>
+            <p>Art Direction, Logotype, Web Design </p>
+          </span>
         </div>
          <div class="frame">
           <img id="work" class="center" src="assets/images/dibbs-screen-2.jpg">
-          <p class="label">dibbs</p>
-          <p>Rails Application, Web Design</p>
+          <a href="http://www.dibbs.it" target="_blank" class="info">Visit Site</a>
+          <span class="mask center">
+            <p class="label">dibbs</p>
+            <p>Rails Application, Web Design</p>
+          </span>
         </div>
         <div class="frame">
           <img id="work" class="center" src="assets/images/fundraise-showcase.jpg">
-          <p class="label">fundraise.com</p>
-          <p>Web Design</p>
+          <a href="http://www.fundraise.com/l/golf-tournament" class="info" target="_blank">Visit Site</a>
+          <span class="mask center">
+            <p class="label">fundraise.com</p>
+            <p>Responsive Design</p>
+          </span>
         </div>
         <div class="frame">
-          <img id="work" class="center" src="assets/images/new-prim-doublefeature.jpg">
-          <p class="label">new primitives</p>
-          <p>Design, Print</p>
+           <img id="work" class="center" src="assets/images/new-prim-doublefeature.jpg">
+          <span class="mask center">
+            <p class="label">new primitives</p>
+            <p>Graphic Design, Print</p>
+          </span>
         </div>
         <div class="frame">
           <img id="work" class="center" src="assets/images/mrg-showcase.jpg">
-          <p class="label">mrg</p>
-          <p>Identity, Web Design</p>
+          <a href="http://www.monumentalrecordsgroup.com" target="_blank" class="info">Visit Site</a>
+          <span class="mask center">
+            <p class="label">mrg</p>
+            <p>Identity, Web Design</p>
+          </span>
         </div>
         <div class="frame">
           <img id="work" class="center" src="assets/images/youth-jobs-wall.jpg">
-          <p class="label">youth jobs coalition</p>
-          <p>Identity, Illustration</p>
+          <span class="mask center">
+            <p class="label">youth jobs coalition</p>
+            <p>Identity, Illustration</p>
+          </span>
         </div>
         <div class="frame">
           <img id="work" class="center" src="assets/images/yjc-sweater-design.jpg">
-          <p class="label">youth jobs campaign</p>
-          <p>Identity</p>
+          <span class="mask center">
+            <p class="label">youth jobs campaign</p>
+            <p>Identity</p>
+           </span>
         </div>
         <div class="frame">
           <img id="work" class="center" src="assets/images/screendoors-relax.jpg">
-          <p class="label">screen doors</p>
-          <p>Design, Print</p>
+          <a href="http://www.soundcloud.com/screendoors" target="_blank"class="info sound">Listen</a>
+          <span class="mask center">
+            <p class="label">screen doors</p>
+            <p>Graphic Design, Print</p>
+          </span>
         </div>
-        <div class="frame">
+        <div class="frame scroll-check">
           <img id="work" class="center" src="assets/images/volumeone.jpg">
-          <p class="label">Around the World on Fifteen Paws</p>
-          <p>Cover Design, Print</p>
+          <span class="mask center">
+            <p class="label">Around the World on Fifteen Paws</p>
+            <p>Cover Design, Print</p>
+          </span>
         </div>
       </div>
-      <div class="column muse">
+      <div class="column muse none">
         <div class="frame">
-          <img id="art" class="center" src="assets/images/tree-house.jpg">
-        </div>
-        <div class="frame">
-          <img id="art" class="center" src="assets/images/Electric-City.jpg">
-        </div>
-        <div class="frame">
-          <img id="art" class="center" src="assets/images/fruit-still.jpg">
-        </div>
-         <div class="frame">
-          <img id="art" class="center" src="assets/images/redrum-2.jpg">
+          <img id="work-1" class="center" src="assets/images/rewind-fastforward.jpg">
+          <span class="mask center">
+            <p class="label">mixed media x ink on board</p>
+          </span>
         </div>
         <div class="frame">
-          <img id="art" class="center" src="assets/images/mile-boots.jpg">
-        </div>
-         <div class="frame">
-          <img id="art" class="center" src="assets/images/home-wreck.jpg">
+          <img id="art" class="center" src="assets/images/redrum.jpg">
+          <span class="mask center">
+            <p class="label">colored pencil on paper</p>
+          </span>
         </div>
         <div class="frame">
-          <img id="art" class="center" src="assets/images/african-queen.jpg">
+          <img id="art" class="center" src="assets/images/framed-lost-home.jpg">
+          <span class="mask center">
+            <p class="label">relief print</p>
+          </span>
+        </div>
+        <div class="frame">
+            <div class="video-container">
+              <iframe width="560" height="315" src="http://player.vimeo.com/video/28829400" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <span class="mask center">
+              <p class="label">video art</p>
+          </span>
         </div>
         <div class="frame">
           <img id="art" class="center" src="assets/images/madison.jpg">
+          <span class="mask center">
+            <p class="label">gouche x ink on paper</p>
+          </span>
         </div>
         <div class="frame">
-          <img id="work-1" class="center" src="assets/images/pogoda.jpg">
+          <img id="art" class="center" src="assets/images/mile-boots.jpg">
+          <span class="mask center">
+            <p class="label">oil x leather on canvas</p>
+          </span>
         </div>
+        <div class="frame">
+          <img id="art" class="center" src="assets/images/twin-framed-sketches.jpg">
+          <span class="mask center">
+            <p class="label">ink on paper</p>
+          </span>
+        </div>
+        <div class="frame">
+          <img id="art" class="center" src="assets/images/treehouse-frame.jpg">
+           <span class="mask center">
+            <p class="label">acrylic on canvas</p>
+          </span>
+        </div>
+        <div class="frame">
+          <img id="art" class="center" src="assets/images/the-standoff.jpg">
+          <span class="mask center">
+            <p class="label">character design </p>
+          </span>
+        </div>
+        <div class="frame">
+          <img id="art" class="center" src="assets/images/african-queen-frame.jpg">
+          <span class="mask center">
+            <p class="label">oil on board</p>
+          </span>
+        </div>
+        <div class="frame">
+          <img id="art" class="center" src="assets/images/acid-city.jpg">
+          <span class="mask center">
+            <p class="label">ink, printed paper, color pencil on paper</p>
+          </span>
+        </div>
+        <div class="frame">
+          <img id="work-1" class="center" src="assets/images/pogoda-2.jpg">
+          <span class="mask center">
+            <p class="label">pencil on rice paper</p>
+          </span>
+        </div>
+        <!-- <div class="frame">
+          <img id="art" class="center" src="assets/images/fruit-still-life.jpg">
+        </div> -->
       </div>
-      <div id="polaroid"></div>
+      <div class="camera">
+        <div id="polaroid" class="center"></div>
+      </div>
     </section>
-    <footer></footer>
+    <a id="scroll-Top" href="#top" title="scroll to top">scroll to top</a>
+    <footer>
+    </footer>
   </body>
 </html>

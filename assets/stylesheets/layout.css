@@ -23,17 +23,84 @@
 /* #Media Queries
 ================================================== */
 
-
-  @media only screen and (min-width: 960px) {
-    .column {
-      max-width: 50%;
-      left: 30%;
-    }
-
-    .frame {
-      padding: 144px 0;
+  @media only screen and (min-width: 1280px) {
+    .frame a.sound {
+      right: 14%;
     }
   }
+
+  @media only screen and (min-width: 960px) {
+    header nav a {
+      margin-left: 20px;
+    }
+
+    nav {
+      visibility: hidden;
+    }
+
+    #title img {
+      position: fixed;
+      min-height: 100%;
+    }
+
+    .column {
+      max-width: 50%;
+      left: 24.5%;
+    }
+
+    .frame  {
+      margin: 244px 0px;
+    }
+
+    #polaroid {
+      margin-left: -90px;
+    }
+  }
+
+   /*Tablet Landscape*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
+    header nav a {
+      margin-left: 20px;
+    }
+
+    #title img {
+      position: absolute;
+      top: 0%;
+      left: -10%;
+      min-height: 100%;
+      width: auto;
+
+    }
+
+    .column {
+      max-width: 50%;
+      left: 28%;
+    }
+
+    .frame a.sound {
+      right: 5%;
+    }
+
+     #polaroid {
+      margin-left: -90px;
+    }
+  }
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    header nav a {
+      margin-left: 20px;
+    }
+
+    #title {
+      height: 424px;
+    }
+
+    #polaroid {
+      margin-left: -88px;
+    }
+  }
+
   /* Smaller than standard 960 (devices and browsers) */
   @media only screen and (max-width: 959px) {
     .column{
@@ -41,27 +108,94 @@
     }
 
     .frame {
-      padding: 85px 0;
+      margin: 198px 0px;
     }
-  }
-
-  @media only screen and (max-width: 1024px) and (orientation : landscape) {
-
-  }
-  /* Tablet Portrait size to standard 960 (devices and browsers) */
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
   }
 
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {
+    #title {
+      height: 208px;
+    }
+
+    #polaroid {
+      margin-left: -90px;
+    }
   }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
   @media only screen and (min-width: 480px) and (max-width: 767px) {
+    header nav a {
+      margin-left: 20px;
+    }
+
+    #title {
+      height: 480px;
+    }
+
+    #title img{
+      height: 100%;
+    }
   }
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
+    header {
+      position: relative;
+      top: 0;
+      padding-top: 0px;
+      height: 110px;
+      width: 100%;
+      background: #000;
+      z-index: 999;
+    }
+
+    nav {
+      position: relative;
+      text-align: center;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 10px;
+      width: 60%;
+      height: 100px;
+      visibility: visible !important;
+    }
+
+    #logo {
+      margin: 0px;
+      width: 100%;
+    }
+
+    #main-nav {
+      display: none;
+    }
+
+    #title {
+      height: 208px;
+    }
+
+    #title img {
+      height: 208px;
+    }
+
+    #js-content-wrapper {
+      min-height: 6000px;
+    }
+
+    .frame a.sound {
+      bottom: 29%;
+      right: 0%;
+    }
+
+    .mask {
+      width: 90%;
+    }
+
+    #polaroid {
+      display: none;
+    }
+
   }
 
 /* #Font-Face
